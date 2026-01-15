@@ -1,18 +1,19 @@
 class Task:
-    def __init__(self, task_id, title, status="A_FAZER"):
+    def __init__(self, task_id, title, status="A_FAZER", priority=1):
         if not title:
             raise ValueError("O título da tarefa é obrigatório")
         self.id = task_id
         self.title = title
         self.status = status
+        self.priority = priority
 
 
 class TaskManager:
     def __init__(self):
         self.tasks = []
 
-    def create_task(self, task_id, title):
-        task = Task(task_id, title)
+    def create_task(self, task_id, title, priority=1):
+        task = Task(task_id, title, priority=priority)
         self.tasks.append(task)
         return task
 
