@@ -3,8 +3,10 @@ from src.task_manager import TaskManager
 
 def test_create_task():
     manager = TaskManager()
-    task = manager.create_task(1, "Primeira tarefa")
+    task = manager.create_task(1, "Primeira tarefa", priority=2)
     assert task.title == "Primeira tarefa"
+    assert task.priority == 2
+
 
 def test_create_task_without_title():
     manager = TaskManager()
