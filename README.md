@@ -29,6 +29,8 @@ A startup de logística necessita identificar rapidamente tarefas pendentes ou e
 - Criação de novo card no Kanban
 - Implementação do filtro por status no código
 - Commit específico documentando a mudança
+- O filtro foi implementado no método `filter_by_status` do TaskManager.
+
 
 ## 🧪 Testes Automatizados
 Os testes foram implementados utilizando **PyTest**, validando:
