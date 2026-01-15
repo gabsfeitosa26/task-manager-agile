@@ -45,3 +45,6 @@ Foi configurado um pipeline de CI com **GitHub Actions**, executando automaticam
 2. Instale o PyTest:
    ```bash
    pip install pytest
+## ✅ Requisitos
+- Python 3.10+ instalado
+- PyTest instalado (pip install pytest)
